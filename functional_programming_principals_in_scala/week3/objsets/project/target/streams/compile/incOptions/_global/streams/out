@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week3/objsets/project/target/scala-2.12/sbt-1.0/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRolling back changes to class files.[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRestoring class files: [0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week3/objsets/project/target/scala-2.12/sbt-1.0/classes.bak[0m

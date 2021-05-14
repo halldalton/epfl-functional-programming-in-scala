@@ -1,0 +1,62 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reload, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(onFailure loadFailed, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.4.3 (Amazon.com Inc. Java 1.8.0_282)[0m
+[0m[[0m[0mdebug[0m] [0m[0m                  Load.loadUnit: plugins took 8.803215ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                  Load.loadUnit: defsScala took 0.002508ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/dalton/.sbt/1.0/plugins[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/dalton/.sbt/1.0/plugins, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 1.031837 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                      Load.resolveProject(global-plugins) took 0.925186ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                    Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /home/dalton/.sbt/1.0/plugins, plugins: List(<none>))) took 2.262768ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/dalton/.sbt/1.0/plugins, returning: (global-plugins)[0m
+[0m[[0m[0mdebug[0m] [0m[0m                  Load.loadUnit: loadedProjectsRaw took 3.004176ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                  Load.loadUnit: cleanEvalClasses took 0.006698ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                Load.loadUnit(file:/home/dalton/.sbt/1.0/plugins/, ...) took 12.131284ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.apply: load took 12.836741ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.apply: resolveProjects took 0.075397ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.apply: finalTransforms took 3.986816ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.apply: config.delegates took 0.241313ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.apply: Def.make(settings)... took 47.60339ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.apply: structureIndex took 20.573299ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.apply: mkStreams took 0.002314ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading global plugins from /home/dalton/.sbt/1.0/plugins[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.defaultLoad until apply took 198.588684ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                      Load.loadUnit: plugins took 8.885119ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                      Load.loadUnit: defsScala took 0.00364ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week6/forcomp/project[0m
+[0m[[0m[0mdebug[0m] [0m[0m                        Load.loadUnit: mkEval took 0.296885ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week6/forcomp/project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 0.949083 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project forcomp-build from buildSettings.sbt,plugins.sbt,idea.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m                          Load.resolveProject(forcomp-build) took 1.432022ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                        Load.loadTransitive: finalizeProject(Project(id forcomp-build, base: /home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week6/forcomp/project, plugins: List(<none>))) took 2.709856ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week6/forcomp/project, returning: (forcomp-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m                      Load.loadUnit: loadedProjectsRaw took 28.817605ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                      Load.loadUnit: cleanEvalClasses took 1.331215ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                    Load.loadUnit(file:/home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week6/forcomp/project/, ...) took 39.456137ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                  Load.apply: load took 40.070375ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                  Load.apply: resolveProjects took 0.084597ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                  Load.apply: finalTransforms took 5.412774ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                  Load.apply: config.delegates took 0.295902ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                  Load.apply: Def.make(settings)... took 42.785494ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                  Load.apply: structureIndex took 14.111067ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                  Load.apply: mkStreams took 0.002852ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week6/forcomp/project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week6/forcomp/project/target/scala-2.12/sbt-1.0/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week6/forcomp/project/StudentTasks.scala:138:11: object tools is not a member of package scala[0m
+[0m[[0m[31merror[0m] [0m[0m    scala.tools.nsc.io.File(path).writeAll(base64Jar)[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadFailed, None, None)[0m
+[0m[[0m[33mwarn[0m] [0m[0mProject loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)[0m
