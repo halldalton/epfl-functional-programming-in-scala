@@ -60,7 +60,7 @@ abstract class QuickCheckHeap extends Properties("Heap") with IntHeap {
     else findMin(meld(h1, h2)) == findMin(h1) || findMin(meld(h1, h2)) == findMin(h2)
   }
 
-  // the set of concatenated values from any two heaps should equal to the set of values of those two heaps melded together
+  // The set of concatenated values from any two heaps should equal to the set of values of those two heaps melded together
   property("meld1") = forAll { (h1: H, h2: H) =>
     val h3 = meld(h1, h2)
     (toList(h1) ::: toList(h2)).toSet == toList(h3).toSet
