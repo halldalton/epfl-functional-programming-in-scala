@@ -1,6 +1,7 @@
 package week1
 
 trait Generator[+T] {
+
   self =>
 
   def generate: T
@@ -12,4 +13,5 @@ trait Generator[+T] {
   def flatMap[S](f: T => Generator[S]): Generator[S] = new Generator[S] {
     def generate: S = f(self.generate).generate
   }
+
 }
