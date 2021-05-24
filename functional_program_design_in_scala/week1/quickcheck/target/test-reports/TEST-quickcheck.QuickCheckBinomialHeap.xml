@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="dalton-Blade" name="quickcheck.QuickCheckBinomialHeap" tests="6" errors="1" failures="0" skipped="0" time="-0.006" timestamp="2021-05-22T19:00:25">
+                     <properties>
+      <property name="jline.esc.timeout" value="0"/><property name="jna.platform.library.path" value="/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu:/lib64:/usr/lib:/lib:/usr/lib/i386-linux-gnu:/lib/i386-linux-gnu:/usr/lib/i386-linux-gnu/sse2:/usr/lib/x86_64-linux-gnu/tls:/usr/lib/i386-linux-gnu/tls:/usr/lib/x86_64-linux-gnu/libfakeroot"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="sun.boot.library.path" value="/home/dalton/.jdks/corretto-1.8.0_282/jre/lib/amd64"/><property name="java.vm.version" value="25.282-b08"/><property name="java.vm.vendor" value="Amazon.com Inc."/><property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/><property name="path.separator" value=":"/><property name="jna.loaded" value="true"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="file.encoding.pkg" value="sun.io"/><property name="user.country" value="US"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.os.patch.level" value="unknown"/><property name="jna.nosys" value="true"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="user.dir" value="/home/dalton/workspace/epfl-functional-programming-in-scala/functional_program_design_in_scala/week1/quickcheck"/><property name="java.runtime.version" value="1.8.0_282-b08"/><property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/><property name="idea.managed" value="true"/><property name="java.endorsed.dirs" value="/home/dalton/.jdks/corretto-1.8.0_282/jre/lib/endorsed"/><property name="os.arch" value="amd64"/><property name="java.io.tmpdir" value="/tmp"/><property name="line.separator" value="
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="os.name" value="Linux"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="jnidispatch.path" value="/tmp/jna--1339138204/jna4435711504596270813.tmp"/><property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="52.0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="os.version" value="4.15.0-143-generic"/><property name="user.home" value="/home/dalton"/><property name="user.timezone" value="America/Chicago"/><property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/><property name="file.encoding" value="UTF-8"/><property name="java.specification.version" value="1.8"/><property name="java.class.path" value="/home/dalton/.local/share/JetBrains/IdeaIC2020.3/Scala/launcher/sbt-launch.jar"/><property name="user.name" value="dalton"/><property name="jline.shutdownhook" value="false"/><property name="java.vm.specification.version" value="1.8"/><property name="sun.java.command" value="/home/dalton/.local/share/JetBrains/IdeaIC2020.3/Scala/launcher/sbt-launch.jar early(addPluginSbtFile=&quot;&quot;&quot;/tmp/idea.sbt&quot;&quot;&quot;) ; set ideaPort in Global := 38679 ; idea-shell"/><property name="java.home" value="/home/dalton/.jdks/corretto-1.8.0_282/jre"/><property name="sun.arch.data.model" value="64"/><property name="user.language" value="en"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.awt.X11.XToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.8.0_282"/><property name="java.ext.dirs" value="/home/dalton/.jdks/corretto-1.8.0_282/jre/lib/ext:/usr/java/packages/lib/ext"/><property name="sun.boot.class.path" value="/home/dalton/.jdks/corretto-1.8.0_282/jre/lib/resources.jar:/home/dalton/.jdks/corretto-1.8.0_282/jre/lib/rt.jar:/home/dalton/.jdks/corretto-1.8.0_282/jre/lib/sunrsasign.jar:/home/dalton/.jdks/corretto-1.8.0_282/jre/lib/jsse.jar:/home/dalton/.jdks/corretto-1.8.0_282/jre/lib/jce.jar:/home/dalton/.jdks/corretto-1.8.0_282/jre/lib/charsets.jar:/home/dalton/.jdks/corretto-1.8.0_282/jre/lib/jfr.jar:/home/dalton/.jdks/corretto-1.8.0_282/jre/classes"/><property name="java.vendor" value="Amazon.com Inc."/><property name="file.separator" value="/"/><property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-8/issues/"/><property name="sbt.supershell" value="false"/><property name="sun.io.unicode.encoding" value="UnicodeLittle"/><property name="sun.cpu.endian" value="little"/><property name="sun.desktop" value="gnome"/><property name="sun.cpu.isalist" value=""/>
+    </properties>
+                     <testcase classname="quickcheck.QuickCheckBinomialHeap" name="min1" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="quickcheck.QuickCheckBinomialHeap" name="gen1" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="quickcheck.QuickCheckBinomialHeap" name="min2" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="quickcheck.QuickCheckBinomialHeap" name="gen2" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="quickcheck.QuickCheckBinomialHeap" name="gen3" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="quickcheck.QuickCheckBinomialHeap" name="min3" time="-0.001">
+                                                 <error message="java.util.NoSuchElementException: min of empty heap" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: java.util.NoSuchElementException: min of empty heap
+	at quickcheck.BinomialHeap.findMin(Heap.scala:57)
+	at quickcheck.BinomialHeap.findMin$(Heap.scala:56)
+	at quickcheck.QuickCheckBinomialHeap$.findMin(QuickCheckSuite.scala:12)
+	at quickcheck.QuickCheckBinomialHeap$.findMin(QuickCheckSuite.scala:12)
+	at quickcheck.QuickCheckHeap.$anonfun$new$23(QuickCheck.scala:51)
+	at quickcheck.QuickCheckHeap.$anonfun$new$23$adapted(QuickCheck.scala:50)
+	at org.scalacheck.Prop$.$anonfun$forAll$18(Prop.scala:921)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:85)
+	at org.scalacheck.Prop$.$anonfun$forAllShrink$2(Prop.scala:761)
+	at org.scalacheck.Prop$.secure(Prop.scala:471)
+	at org.scalacheck.Prop$.result$1(Prop.scala:761)
+	at org.scalacheck.Prop$.$anonfun$forAllShrink$1(Prop.scala:800)
+	at org.scalacheck.Prop$.$anonfun$apply$1(Prop.scala:307)
+	at org.scalacheck.PropFromFun.apply(Prop.scala:22)
+	at org.scalacheck.Prop$.result$1(Prop.scala:762)
+	at org.scalacheck.Prop$.$anonfun$forAllShrink$1(Prop.scala:800)
+	at org.scalacheck.Prop$.$anonfun$apply$1(Prop.scala:307)
+	at org.scalacheck.PropFromFun.apply(Prop.scala:22)
+	at org.scalacheck.Prop$.$anonfun$delay$1(Prop.scala:476)
+	at org.scalacheck.Prop$.$anonfun$apply$1(Prop.scala:307)
+	at org.scalacheck.PropFromFun.apply(Prop.scala:22)
+	at org.scalacheck.Test$.workerFun$1(Test.scala:326)
+	at org.scalacheck.Test$.$anonfun$check$1(Test.scala:355)
+	at org.scalacheck.Test$.$anonfun$check$1$adapted(Test.scala:355)
+	at org.scalacheck.Platform$.runWorkers(Platform.scala:40)
+	at org.scalacheck.Test$.check(Test.scala:355)
+	at org.scalacheck.ScalaCheckRunner$$anon$2.executeInternal(ScalaCheckFramework.scala:123)
+	at org.scalacheck.ScalaCheckRunner$$anon$2.$anonfun$execute$11(ScalaCheckFramework.scala:113)
+	at org.scalacheck.ScalaCheckRunner$$anon$2.$anonfun$execute$11$adapted(ScalaCheckFramework.scala:112)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:904)
+	at scala.collection.IterableOps$WithFilter.foreach(Iterable.scala:874)
+	at org.scalacheck.ScalaCheckRunner$$anon$2.execute(ScalaCheckFramework.scala:112)
+	at sbt.ForkMain$Run.lambda$runTest$1(ForkMain.java:304)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</error>
+                                               </testcase>
+                     <system-out><![CDATA[]]></system-out>
+                     <system-err><![CDATA[]]></system-err>
+                   </testsuite>

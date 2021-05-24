@@ -1,0 +1,13 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/dalton/workspace/epfl-functional-programming-in-scala/functional_program_design_in_scala/week1/quickcheck/target/scala-2.13/progfun2-quickcheck_2.13-0.1.0-SNAPSHOT-sources.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	quickcheck/Heap.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dalton/workspace/epfl-functional-programming-in-scala/functional_program_design_in_scala/week1/quickcheck/src/main/scala/quickcheck/Heap.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	week1/Generator.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dalton/workspace/epfl-functional-programming-in-scala/functional_program_design_in_scala/week1/quickcheck/src/main/scala/week1/Generator.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	week1/Generators.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dalton/workspace/epfl-functional-programming-in-scala/functional_program_design_in_scala/week1/quickcheck/src/main/scala/week1/Generators.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	week1/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dalton/workspace/epfl-functional-programming-in-scala/functional_program_design_in_scala/week1/quickcheck/src/main/scala/week1/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	quickcheck/QuickCheck.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dalton/workspace/epfl-functional-programming-in-scala/functional_program_design_in_scala/week1/quickcheck/src/main/scala/quickcheck/QuickCheck.scala[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
