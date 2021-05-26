@@ -5,7 +5,7 @@ class Pouring(capacity: Vector[Int]) {
   // States
 
   type State = Vector[Int]
-  val initialState: State = capacity map (x => 0)
+  val initialState: State = capacity map (_ => 0)
 
   // Moves
 
