@@ -1,0 +1,3 @@
+[debug] "not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/home/dalton/workspace/epfl-functional-programming-in-scala/functional_program_design_in_scala/week3/codecs/"), "codecs")...
+[debug] Done updating ProjectRef(uri("file:/home/dalton/workspace/epfl-functional-programming-in-scala/functional_program_design_in_scala/week3/codecs/"), "codecs")
