@@ -73,10 +73,12 @@ trait Solver extends GameDef {
            explored: Set[Block]): LazyList[(Block, List[Move])] =
     if (initial.isEmpty) LazyList.empty
     else {
-      val neighbors = neighborsWithHistory(initial.head._1, initial.head._2)
-      val newNeighbors = newNeighborsOnly(neighbors, explored)
-      val more = for (neighbor <- newNeighbors) yield neighbor
-      initial.head #:: from(more, explored ++ (more map (_._1)))
+      val more = for {
+        init <- initial
+        neighbors <- neighborsWithHistory(init._1, init._2)
+      } yield neighbors
+      val newNeighbors = newNeighborsOnly(more, explored)
+      initial ++ from(newNeighbors, explored ++ (newNeighbors map (_._1)))
     }
 
   /**
@@ -98,5 +100,6 @@ trait Solver extends GameDef {
    * the first move that the player should perform from the starting
    * position.
    */
-  lazy val solution: List[Move] = pathsToGoal.head._2
+  lazy val solution: List[Move] =
+    if (pathsToGoal.isEmpty) List() else pathsToGoal.head._2.reverse
 }
