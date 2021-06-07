@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ScalaCompilerConfiguration">
     <option name="incrementalityType" value="SBT" />
-    <profile name="sbt 1" modules="calculator_358" />
+    <profile name="sbt 1" modules="calculator_3809" />
     <profile name="sbt 2" modules="progfun2-calculator">
       <option name="implicitConversions" value="true" />
       <option name="deprecationWarnings" value="true" />
