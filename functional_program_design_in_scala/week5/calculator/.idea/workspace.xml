@@ -4,16 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a57edc28-0249-4f8c-93fa-d4d492b36e31" name="Default Changelist" comment="Started week5">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/frp/Signal.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/progfun2-calculator-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/progfun2-calculator-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/calculator/Calculator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/calculator/Calculator.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/calculator/Polynomial.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/calculator/Polynomial.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/calculator/Signal.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/calculator/Signal.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/calculator/TweetLength.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/calculator/TweetLength.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/signals/BankAccount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/signals/BankAccount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/signals/accounts.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/signals/accounts.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/target/scala-2.13/update/update_cache_2.13/output" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/target/scala-2.13/update/update_cache_2.13/output" afterDir="false" />
+    <list default="true" id="a57edc28-0249-4f8c-93fa-d4d492b36e31" name="Default Changelist" comment="Finished week 5">
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/_global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/_global/streams/copy-resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/streams/out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +79,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623104974676</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Started week5">
+      <created>1623179396411</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623179396411</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Finished week 5">
+      <created>1623179413444</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623179413444</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started week5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started week5" />
+    <MESSAGE value="Finished week 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished week 5" />
   </component>
 </project>
