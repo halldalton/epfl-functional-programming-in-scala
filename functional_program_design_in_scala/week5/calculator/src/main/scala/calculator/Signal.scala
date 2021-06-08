@@ -35,7 +35,7 @@ class Signal[T](expr: => T) {
     computeValue()
   }
 
-  def apply() = {
+  def apply(): T = {
     observers += caller.value
     assert(!caller.value.observers.contains(this), "cyclic signal definition")
     caller.value.observed ::= this
@@ -52,7 +52,7 @@ object Var {
 }
 
 object NoSignal extends Signal[Nothing](???) {
-  override def computeValue() = ()
+  override def computeValue(): Unit = ()
 }
 
 object Signal {

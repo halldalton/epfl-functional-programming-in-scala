@@ -1,5 +1,7 @@
 package signals
 
+import frp.Var
+
 class BankAccount {
 
   val balance: Var[Int] = Var(0)
