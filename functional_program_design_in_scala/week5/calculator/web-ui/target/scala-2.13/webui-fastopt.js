@@ -5458,6 +5458,9 @@ function $h_Lcalculator_Calculator$() {
   /*<skip>*/
 }
 $h_Lcalculator_Calculator$.prototype = $c_Lcalculator_Calculator$.prototype;
+$c_Lcalculator_Calculator$.prototype.init___ = (function() {
+  return this
+});
 $c_Lcalculator_Calculator$.prototype.getReferenceExpr__p1__T__sci_Map__Lcalculator_Expr = (function(name, references) {
   var this$1 = references.get__O__s_Option(name);
   if (this$1.isEmpty__Z()) {
@@ -5469,8 +5472,50 @@ $c_Lcalculator_Calculator$.prototype.getReferenceExpr__p1__T__sci_Map__Lcalculat
   };
   return $as_Lcalculator_Expr(jsx$1)
 });
-$c_Lcalculator_Calculator$.prototype.init___ = (function() {
-  return this
+$c_Lcalculator_Calculator$.prototype.loop$1__p1__Lcalculator_Expr__sci_Map__sci_List__D = (function(expr, references, names) {
+  _loop: while (true) {
+    var x1 = expr;
+    if ($is_Lcalculator_Literal(x1)) {
+      var x2 = $as_Lcalculator_Literal(x1);
+      var v = x2.v$2;
+      return v
+    } else if ($is_Lcalculator_Ref(x1)) {
+      var x3 = $as_Lcalculator_Ref(x1);
+      var name = x3.name$2;
+      if ((!names.contains__O__Z(name))) {
+        var temp$expr = this.getReferenceExpr__p1__T__sci_Map__Lcalculator_Expr(name, references);
+        var this$1 = names;
+        var temp$names = new $c_sci_$colon$colon().init___O__sci_List(name, this$1);
+        expr = temp$expr;
+        names = temp$names;
+        continue _loop
+      } else {
+        return (NaN)
+      }
+    } else if ($is_Lcalculator_Plus(x1)) {
+      var x4 = $as_Lcalculator_Plus(x1);
+      var a = x4.a$2;
+      var b = x4.b$2;
+      return (this.loop$1__p1__Lcalculator_Expr__sci_Map__sci_List__D(a, references, names) + this.loop$1__p1__Lcalculator_Expr__sci_Map__sci_List__D(b, references, names))
+    } else if ($is_Lcalculator_Minus(x1)) {
+      var x5 = $as_Lcalculator_Minus(x1);
+      var a$2 = x5.a$2;
+      var b$2 = x5.b$2;
+      return (this.loop$1__p1__Lcalculator_Expr__sci_Map__sci_List__D(a$2, references, names) - this.loop$1__p1__Lcalculator_Expr__sci_Map__sci_List__D(b$2, references, names))
+    } else if ($is_Lcalculator_Times(x1)) {
+      var x6 = $as_Lcalculator_Times(x1);
+      var a$3 = x6.a$2;
+      var b$3 = x6.b$2;
+      return (this.loop$1__p1__Lcalculator_Expr__sci_Map__sci_List__D(a$3, references, names) * this.loop$1__p1__Lcalculator_Expr__sci_Map__sci_List__D(b$3, references, names))
+    } else if ($is_Lcalculator_Divide(x1)) {
+      var x7 = $as_Lcalculator_Divide(x1);
+      var a$4 = x7.a$2;
+      var b$4 = x7.b$2;
+      return (this.loop$1__p1__Lcalculator_Expr__sci_Map__sci_List__D(a$4, references, names) / this.loop$1__p1__Lcalculator_Expr__sci_Map__sci_List__D(b$4, references, names))
+    } else {
+      throw new $c_s_MatchError().init___O(x1)
+    }
+  }
 });
 $c_Lcalculator_Calculator$.prototype.computeValues__sci_Map__sci_Map = (function(namedExpressions) {
   return $as_sci_Map(namedExpressions.map__F1__sc_IterableOps(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, namedExpressions$1) {
@@ -5489,41 +5534,8 @@ $c_Lcalculator_Calculator$.prototype.computeValues__sci_Map__sci_Map = (function
   })(this, namedExpressions))))
 });
 $c_Lcalculator_Calculator$.prototype.eval__Lcalculator_Expr__sci_Map__D = (function(expr, references) {
-  _eval: while (true) {
-    var x1 = expr;
-    if ($is_Lcalculator_Literal(x1)) {
-      var x2 = $as_Lcalculator_Literal(x1);
-      var v = x2.v$2;
-      return v
-    } else if ($is_Lcalculator_Ref(x1)) {
-      var x3 = $as_Lcalculator_Ref(x1);
-      var name = x3.name$2;
-      expr = this.getReferenceExpr__p1__T__sci_Map__Lcalculator_Expr(name, references);
-      continue _eval
-    } else if ($is_Lcalculator_Plus(x1)) {
-      var x4 = $as_Lcalculator_Plus(x1);
-      var a = x4.a$2;
-      var b = x4.b$2;
-      return (this.eval__Lcalculator_Expr__sci_Map__D(a, references) + this.eval__Lcalculator_Expr__sci_Map__D(b, references))
-    } else if ($is_Lcalculator_Minus(x1)) {
-      var x5 = $as_Lcalculator_Minus(x1);
-      var a$2 = x5.a$2;
-      var b$2 = x5.b$2;
-      return (this.eval__Lcalculator_Expr__sci_Map__D(a$2, references) - this.eval__Lcalculator_Expr__sci_Map__D(b$2, references))
-    } else if ($is_Lcalculator_Times(x1)) {
-      var x6 = $as_Lcalculator_Times(x1);
-      var a$3 = x6.a$2;
-      var b$3 = x6.b$2;
-      return (this.eval__Lcalculator_Expr__sci_Map__D(a$3, references) * this.eval__Lcalculator_Expr__sci_Map__D(b$3, references))
-    } else if ($is_Lcalculator_Divide(x1)) {
-      var x7 = $as_Lcalculator_Divide(x1);
-      var a$4 = x7.a$2;
-      var b$4 = x7.b$2;
-      return (this.eval__Lcalculator_Expr__sci_Map__D(a$4, references) / this.eval__Lcalculator_Expr__sci_Map__D(b$4, references))
-    } else {
-      throw new $c_s_MatchError().init___O(x1)
-    }
-  }
+  var ns = $m_sci_Nil$();
+  return this.loop$1__p1__Lcalculator_Expr__sci_Map__sci_List__D(expr, references, ns)
 });
 var $d_Lcalculator_Calculator$ = new $TypeData().initClass({
   Lcalculator_Calculator$: 0
@@ -5589,35 +5601,38 @@ $h_Lcalculator_Polynomial$.prototype = $c_Lcalculator_Polynomial$.prototype;
 $c_Lcalculator_Polynomial$.prototype.init___ = (function() {
   return this
 });
-$c_Lcalculator_Polynomial$.prototype.compute$1__p1__Lcalculator_Signal__Lcalculator_Signal__Lcalculator_Signal__sci_Set = (function(a$2, b$2, c$2) {
-  var delta = $uD(this.computeDelta__Lcalculator_Signal__Lcalculator_Signal__Lcalculator_Signal__Lcalculator_Signal(a$2, b$2, c$2).apply__O());
-  if ((delta < 0)) {
+$c_Lcalculator_Polynomial$.prototype.compute$1__p1__Lcalculator_Signal__Lcalculator_Signal__Lcalculator_Signal__sci_Set = (function(delta$1, b$2, a$2) {
+  if (($uD(delta$1.apply__O()) < 0)) {
     var this$1 = $m_s_Predef$().Set$3;
     var elems = $m_sci_Nil$();
     return this$1.from__sc_IterableOnce__sci_Set(elems)
   } else {
-    var solution1 = ((((-$uD(b$2.apply__O())) + delta) / 2) * $uD(a$2.apply__O()));
-    var solution2 = ((((-$uD(b$2.apply__O())) - delta) / 2) * $uD(a$2.apply__O()));
+    var jsx$1 = $uD(b$2.apply__O());
+    var x = $uD(delta$1.apply__O());
+    var solution1 = (((-jsx$1) + $uD($g.Math.sqrt(x))) / (2 * $uD(a$2.apply__O())));
+    var jsx$2 = $uD(b$2.apply__O());
+    var x$1 = $uD(delta$1.apply__O());
+    var solution2 = (((-jsx$2) - $uD($g.Math.sqrt(x$1))) / (2 * $uD(a$2.apply__O())));
     if ((solution1 !== solution2)) {
-      var this$5 = $m_s_Predef$().Set$3;
+      var this$9 = $m_s_Predef$().Set$3;
       var array = [solution1, solution2];
       var elems$1 = new $c_sjsr_WrappedVarArgs().init___sjs_js_Array(array);
-      return this$5.from__sc_IterableOnce__sci_Set(elems$1)
+      return this$9.from__sc_IterableOnce__sci_Set(elems$1)
     } else {
-      var this$9 = $m_s_Predef$().Set$3;
+      var this$13 = $m_s_Predef$().Set$3;
       var array$1 = [solution1];
       var elems$2 = new $c_sjsr_WrappedVarArgs().init___sjs_js_Array(array$1);
-      return this$9.from__sc_IterableOnce__sci_Set(elems$2)
+      return this$13.from__sc_IterableOnce__sci_Set(elems$2)
     }
   }
 });
 $c_Lcalculator_Polynomial$.prototype.computeSolutions__Lcalculator_Signal__Lcalculator_Signal__Lcalculator_Signal__Lcalculator_Signal__Lcalculator_Signal = (function(a, b, c, delta) {
   $m_Lcalculator_Signal$();
-  var expr = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, a$1, b$1, c$1) {
+  var expr = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, delta$1, b$1, a$1) {
     return (function() {
-      return $this.compute$1__p1__Lcalculator_Signal__Lcalculator_Signal__Lcalculator_Signal__sci_Set(a$1, b$1, c$1)
+      return $this.compute$1__p1__Lcalculator_Signal__Lcalculator_Signal__Lcalculator_Signal__sci_Set(delta$1, b$1, a$1)
     })
-  })(this, a, b, c));
+  })(this, delta, b, a));
   return new $c_Lcalculator_Signal().init___F0(expr)
 });
 $c_Lcalculator_Polynomial$.prototype.computeDelta__Lcalculator_Signal__Lcalculator_Signal__Lcalculator_Signal__Lcalculator_Signal = (function(a, b, c) {
@@ -21239,9 +21254,6 @@ $c_sci_List.prototype.foreach__F1__V = (function(f) {
     these = $as_sci_List(these.tail__O())
   }
 });
-$c_sci_List.prototype.indexWhere__F1__I__I = (function(p, from) {
-  return $f_sc_LinearSeqOps__indexWhere__F1__I__I(this, p, from)
-});
 $c_sci_List.prototype.listEq$1__p4__sci_List__sci_List__Z = (function(a, b) {
   _listEq: while (true) {
     if ((a === b)) {
@@ -21260,6 +21272,9 @@ $c_sci_List.prototype.listEq$1__p4__sci_List__sci_List__Z = (function(a, b) {
       }
     }
   }
+});
+$c_sci_List.prototype.indexWhere__F1__I__I = (function(p, from) {
+  return $f_sc_LinearSeqOps__indexWhere__F1__I__I(this, p, from)
 });
 $c_sci_List.prototype.iterator__sc_Iterator = (function() {
   return new $c_sc_StrictOptimizedLinearSeqOps$$anon$1().init___sc_StrictOptimizedLinearSeqOps(this)
@@ -21280,6 +21295,16 @@ $c_sci_List.prototype.drop__I__O = (function(n) {
   var n$1 = n;
   var s = this;
   return $f_sc_StrictOptimizedLinearSeqOps__loop$2__psc_StrictOptimizedLinearSeqOps__I__sc_LinearSeq__sc_LinearSeq(this, n$1, s)
+});
+$c_sci_List.prototype.contains__O__Z = (function(elem) {
+  var these = this;
+  while ((!these.isEmpty__Z())) {
+    if ($m_sr_BoxesRunTime$().equals__O__O__Z(these.head__O(), elem)) {
+      return true
+    };
+    these = $as_sci_List(these.tail__O())
+  };
+  return false
 });
 $c_sci_List.prototype.className__T = (function() {
   return "List"
