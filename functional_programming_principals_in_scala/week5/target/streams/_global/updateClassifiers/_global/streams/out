@@ -1,3 +1,4 @@
-[debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week5/"), "week5")...
-[debug] Done updating ProjectRef(uri("file:/home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week5/"), "week5")
+[warn] scala-compiler-2.13.5-sources.jar no longer exists at /home/dalton/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.5/scala-compiler-2.13.5-sources.jar
+[debug] not up to date. inChanged = false, force = false
+[debug] Updating ProjectRef(uri("file:/home/dalton/workspace/epfl-functional-programming-in-scala/functional_programming_principals_in_scala/week5/"), "week5")...
+[debug] Done updating ProjectRef(uri("file:/home/dalton/workspace/epfl-functional-programming-in-scala/functional_programming_principals_in_scala/week5/"), "week5")

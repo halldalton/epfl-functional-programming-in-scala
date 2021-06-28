@@ -1,3 +1,3 @@
-[debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week5/project/"), "week5-build")...
-[debug] Done updating ProjectRef(uri("file:/home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week5/project/"), "week5-build")
+[debug] not up to date. inChanged = false, force = false
+[debug] Updating ProjectRef(uri("file:/home/dalton/workspace/epfl-functional-programming-in-scala/functional_programming_principals_in_scala/week5/project/"), "week5-build")...
+[debug] Done updating ProjectRef(uri("file:/home/dalton/workspace/epfl-functional-programming-in-scala/functional_programming_principals_in_scala/week5/project/"), "week5-build")

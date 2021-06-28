@@ -37,10 +37,24 @@ class Img(val width: Int, val height: Int, private val data: Array[RGBA]):
   def update(x: Int, y: Int, c: RGBA): Unit = data(y * width + x) = c
 
 /** Computes the blurred RGBA value of a single pixel of the input image. */
-def boxBlurKernel(src: Img, x: Int, y: Int, radius: Int): RGBA =
-
-  // TODO implement using while loops
-  ???
+def boxBlurKernel(src: Img, x: Int, y: Int, radius: Int): RGBA = {
+  var r = 0; var g = 0; var b = 0; var a = 0; var kernelsize = 0
+  var deltaX = radius * -1
+  while (deltaX <= radius) {
+    var deltaY = radius * -1
+    val nextX = clamp(x + deltaX, 0, src.width - 1)
+    while (deltaY <= radius) {
+      val nextY = clamp(y + deltaY, 0, src.height - 1)
+      val nextRgba = src.apply(nextX, nextY)
+      r = r + red(nextRgba); g = g + green(nextRgba);  b = b + blue(nextRgba); a = a + alpha(nextRgba)
+      kernelsize = kernelsize + 1
+      deltaY = deltaY + 1
+    }
+    deltaX = deltaX + 1
+  }
+  r = (r / kernelsize).toInt; g = (g / kernelsize).toInt; b = (b / kernelsize).toInt; a = (a / kernelsize).toInt
+  rgba(r, g, b, a)
+}
 
 val forkJoinPool = ForkJoinPool()
 
