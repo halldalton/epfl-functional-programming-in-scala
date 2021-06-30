@@ -22,7 +22,7 @@ object VerticalBoxBlurRunner:
     }
     println(s"sequential blur time: $seqtime")
 
-    val numTasks = 32
+    val numTasks = 16
     val partime = standardConfig measure {
       VerticalBoxBlur.parBlur(src, dst, numTasks, radius)
     }
@@ -40,8 +40,9 @@ object VerticalBoxBlur extends VerticalBoxBlurInterface:
    *  bottom.
    */
   def blur(src: Img, dst: Img, from: Int, end: Int, radius: Int): Unit = {
-    var x = from; var y = 0;
+    var x = from
     while (x < end) {
+      var y = 0
       while (y < src.height) {
         val newRGBA = boxBlurKernel(src, x, y, radius)
         dst.update(x, y, newRGBA)
@@ -58,9 +59,14 @@ object VerticalBoxBlur extends VerticalBoxBlurInterface:
    *  columns.
    */
   def parBlur(src: Img, dst: Img, numTasks: Int, radius: Int): Unit = {
-    val split = (src.width / numTasks).toInt
-    val splits = Range(0, src.width, split)
-    val tups = splits zip (splits map (_ + split))
+    val split = src.width / numTasks
+    var tups: List[(Int, Int)] = List()
+    if (split > 0) {
+      val splits = Range(0, src.width, split)
+      tups = (splits zip (splits map (x => if (x + split <= src.width) x + split else src.width))).toList
+    } else {
+      tups = List((0, src.width))
+    }
     val tasks = for (tup <- tups) yield task(blur(src, dst, tup._1, tup._2, radius))
     for (task <- tasks) task.join()
   }

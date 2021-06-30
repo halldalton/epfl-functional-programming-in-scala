@@ -22,7 +22,7 @@ object HorizontalBoxBlurRunner:
     }
     println(s"sequential blur time: $seqtime")
 
-    val numTasks = 32
+    val numTasks = 16
     val partime = standardConfig measure {
       HorizontalBoxBlur.parBlur(src, dst, numTasks, radius)
     }
@@ -38,8 +38,9 @@ object HorizontalBoxBlur extends HorizontalBoxBlurInterface:
    *  Within each row, `blur` traverses the pixels by going from left to right.
    */
   def blur(src: Img, dst: Img, from: Int, end: Int, radius: Int): Unit = {
-    var x = 0; var y = from;
+    var y = from
     while (y < end) {
+      var x = 0
       while (x < src.width) {
         val newRGBA = boxBlurKernel(src, x, y, radius)
         dst.update(x, y, newRGBA)
@@ -56,9 +57,14 @@ object HorizontalBoxBlur extends HorizontalBoxBlurInterface:
    *  rows.
    */
   def parBlur(src: Img, dst: Img, numTasks: Int, radius: Int): Unit = {
-    val split = (src.height / numTasks).toInt
-    val splits = Range(0, src.height, split)
-    val tups = splits zip (splits map (_ + split))
+    val split = src.height / numTasks
+    var tups: List[(Int, Int)] = List()
+    if (split > 0) {
+      val splits = Range(0, src.height, split)
+      tups = (splits zip (splits map (x => if (x + split <= src.height) x + split else src.height))).toList
+    } else {
+      tups = List((0, src.height))
+    }
     val tasks = for (tup <- tups) yield task(blur(src, dst, tup._1, tup._2, radius))
     for (task <- tasks) task.join()
   }

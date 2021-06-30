@@ -40,19 +40,25 @@ class Img(val width: Int, val height: Int, private val data: Array[RGBA]):
 def boxBlurKernel(src: Img, x: Int, y: Int, radius: Int): RGBA = {
   var r = 0; var g = 0; var b = 0; var a = 0; var kernelsize = 0
   var deltaX = radius * -1
+  var tups: Array[(Int, Int)] = Array()
   while (deltaX <= radius) {
     var deltaY = radius * -1
     val nextX = clamp(x + deltaX, 0, src.width - 1)
     while (deltaY <= radius) {
       val nextY = clamp(y + deltaY, 0, src.height - 1)
-      val nextRgba = src.apply(nextX, nextY)
-      r = r + red(nextRgba); g = g + green(nextRgba);  b = b + blue(nextRgba); a = a + alpha(nextRgba)
-      kernelsize = kernelsize + 1
-      deltaY = deltaY + 1
+      if (tups.contains((nextX, nextY))) // this operation is expensive and should be refactored
+        deltaY += 1
+      else {
+        tups = (nextX, nextY) +: tups
+        val nextRgba = src.apply(nextX, nextY)
+        r = r + red(nextRgba); g = g + green(nextRgba); b = b + blue(nextRgba); a = a + alpha(nextRgba)
+        kernelsize += 1
+        deltaY += 1
+      }
     }
-    deltaX = deltaX + 1
+    deltaX += 1
   }
-  r = (r / kernelsize).toInt; g = (g / kernelsize).toInt; b = (b / kernelsize).toInt; a = (a / kernelsize).toInt
+  r = r / kernelsize; g = g / kernelsize; b = b / kernelsize; a = a / kernelsize
   rgba(r, g, b, a)
 }
 
