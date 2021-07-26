@@ -1,2 +1,2 @@
-[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week1/recfun/project/target/scala-2.12/sbt-1.0/resource_managed/main/sbt/sbt.autoplugins,/home/dalton/workspace/functional_programming_in_scala/functional_programming_principals_in_scala/week1/recfun/project/target/scala-2.12/sbt-1.0/classes/sbt/sbt.autoplugins)[0m
+[debug] Copy resource mappings: 
+[debug] 	(/home/dalton/workspace/epfl-functional-programming-in-scala/functional_programming_principals_in_scala/week1/recfun/project/target/scala-2.12/sbt-1.0/resource_managed/main/sbt/sbt.autoplugins,/home/dalton/workspace/epfl-functional-programming-in-scala/functional_programming_principals_in_scala/week1/recfun/project/target/scala-2.12/sbt-1.0/classes/sbt/sbt.autoplugins)

@@ -37,23 +37,29 @@ object ParallelParenthesesBalancing extends ParallelParenthesesBalancingInterfac
 
   /** Returns `true` iff the parentheses in the input `chars` are balanced.
    */
-  def balance(chars: Array[Char]): Boolean =
-    ???
+  def balance(chars: List[Char]): Boolean = {
+    def checkBalance(chars: List[Char]): Int = {
+      def checkChar(char: Char): Int = if (char == '(') 1 else if (char == ')') -1 else 0
+      if (chars.isEmpty) 0
+      else {
+        val value = checkChar(chars.head) + checkBalance(chars.tail)
+        if (value > 0) -1 else value
+      }
+    }
+    if(checkBalance(chars) == 0) true else false
+  }
 
-  /** Returns `true` iff the parentheses in the input `chars` are balanced.
+  /** Returns `true` if the parentheses in the input `chars` are balanced.
    */
   def parBalance(chars: Array[Char], threshold: Int): Boolean =
 
-    def traverse(idx: Int, until: Int, arg1: Int, arg2: Int) /*: ???*/ = {
-      ???
+    def traverse(idx: Int, until: Int, arg1: Int, arg2: Int) = {
+      val segment = chars.slice(idx, until)
+      
     }
 
-    def reduce(from: Int, until: Int) /*: ???*/ = {
+    def reduce(from: Int, until: Int) = {
       ???
     }
 
     reduce(0, chars.length) == ???
-
-  // For those who want more:
-  // Prove that your reduction operator is associative!
-
