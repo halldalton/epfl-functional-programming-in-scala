@@ -37,16 +37,9 @@ object ParallelParenthesesBalancing extends ParallelParenthesesBalancingInterfac
 
   /** Returns `true` iff the parentheses in the input `chars` are balanced.
    */
-  def balance(chars: List[Char]): Boolean = {
-    def checkBalance(chars: List[Char]): Int = {
-      def checkChar(char: Char): Int = if (char == '(') 1 else if (char == ')') -1 else 0
-      if (chars.isEmpty) 0
-      else {
-        val value = checkChar(chars.head) + checkBalance(chars.tail)
-        if (value > 0) -1 else value
-      }
-    }
-    if(checkBalance(chars) == 0) true else false
+  def balance(chars: Array[Char]): Boolean = {
+    def checkChar(c: Char): Int = if (c == '(') 1 else if (c == ')') -1 else 0
+    chars.scanLeft(0)((a, b) => a + checkChar(b)) forall (x => x >= 0)
   }
 
   /** Returns `true` if the parentheses in the input `chars` are balanced.
@@ -54,8 +47,7 @@ object ParallelParenthesesBalancing extends ParallelParenthesesBalancingInterfac
   def parBalance(chars: Array[Char], threshold: Int): Boolean =
 
     def traverse(idx: Int, until: Int, arg1: Int, arg2: Int) = {
-      val segment = chars.slice(idx, until)
-      
+      ???
     }
 
     def reduce(from: Int, until: Int) = {
